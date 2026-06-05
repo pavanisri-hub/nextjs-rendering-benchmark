@@ -8,9 +8,9 @@ This project implements the same product catalog three times using different Nex
 
 ## Live Deployments
 
-- CSR: [<replace-with-csr-url>](https://nextjs-rendering-benchmark-cp1j.vercel.app/products)
-- SSR: [<replace-with-ssr-url](https://nextjs-rendering-benchmark.vercel.app/products)>
-- SSG: [<replace-with-ssg-url>](https://nextjs-rendering-benchmark-v8op.vercel.app/)
+- CSR: (https://nextjs-rendering-benchmark-cp1j.vercel.app/products)
+- SSR:(https://nextjs-rendering-benchmark.vercel.app/products)>
+- SSG: (https://nextjs-rendering-benchmark-v8op.vercel.app/)
 
 ## Project Structure
 
