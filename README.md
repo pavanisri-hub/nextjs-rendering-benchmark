@@ -11,55 +11,32 @@ This project implements the same product catalog three times using different Nex
 - CSR: (https://nextjs-rendering-benchmark-cp1j.vercel.app/products)
 - SSR:(https://nextjs-rendering-benchmark.vercel.app/products)>
 - SSG: (https://nextjs-rendering-benchmark-v8op.vercel.app/)
+> Replace these URLs after deploying each app to Vercel.
 
-## Project Structure
+- CSR: https://your-csr-app.vercel.app
+- SSR: https://your-ssr-app.vercel.app
+- SSG: https://your-ssg-app.vercel.app
 
-- `csr-app/` - CSR implementation
-- `ssr-app/` - SSR implementation
-- `ssg-app/` - SSG implementation
-- `results/` - Lighthouse JSON reports
-- `parse-results.js` - Node script to summarize Lighthouse results
-- `ANALYSIS.md` - Final benchmark analysis and decision chart
+## Running locally
 
-## Local Development
-
-### CSR
 ```bash
+# CSR
 cd csr-app
 npm install
 npm run dev
-```
 
-### SSR
-```bash
+# SSR
 cd ssr-app
 npm install
 npm run dev
-```
 
-### SSG
-```bash
+# SSG
 cd ssg-app
 npm install
 npm run dev
 ```
 
-## Benchmarking
+## Lighthouse Results
 
-1. Deploy each app to Vercel as a separate project.
-2. Run Lighthouse CLI against each deployed `/products` page.
-3. Save the raw JSON outputs in `results/`.
-4. Run:
-
-```bash
-node parse-results.js
-```
-
-to print a summary table.
-
-## Notes
-
-- CSR uses client-side fetching with `useEffect`.
-- SSR uses `getServerSideProps`.
-- SSG uses `getStaticProps`, `getStaticPaths`, ISR, and `fallback: "blocking"`.
-- The product data comes from DummyJSON.
+Raw Lighthouse JSON reports are stored under `results/`.  
+Use `node parse-results.js` to print a summary table in the terminal.
